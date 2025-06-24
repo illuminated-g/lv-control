@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-08-23 11:37:29" Modified_Date="2024-08-23 11:40:46" Creator="derri" Comments="" ID="9356bd4aa6a2a77816e828ca95b9c2de">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-08-23 11:37:29" Modified_Date="2024-08-27 23:43:48" Creator="derri" Comments="" ID="675ef071372ae5bfb0ec4474c9e40f81">
   <Library_General_Settings>
     <Package_File_Name>IlluminatedG_lib_IG_Control</Package_File_Name>
-    <Library_Version>1.0.0.3</Library_Version>
+    <Library_Version>1.1.0.6</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\vip</Library_Output_Folder>
@@ -38,7 +38,11 @@ Integral windup is prevent by capping the sum at a value that does not surpass s
       <Copyright/>
       <Packager>Derrick Bommarito</Packager>
       <URL>https://github.com/illuminated-g/lv-control</URL>
-      <Release_Notes/>
+      <Release_Notes>1.1.0.5
+- Set reentrancy for better parallel usage.
+- Inline maths subVIs.
+- Add SP and dT to state info cluster.
+- Set Test PID.vi demo as package example.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -107,6 +111,12 @@ Integral windup is prevent by capping the sum at a value that does not surpass s
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Test</Path>
+        <Destination>1</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
       <Password_Overrides>
         <Path>.</Path>
         <Password/>
@@ -117,9 +127,6 @@ Integral windup is prevent by capping the sum at a value that does not surpass s
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
-      <Compile_Exclusions>
-        <Path/>
-      </Compile_Exclusions>
       <Place_Folder_Contents>
         <Path/>
       </Place_Folder_Contents>
@@ -223,7 +230,7 @@ Integral windup is prevent by capping the sum at a value that does not surpass s
         <Path>FPID</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D6B9B8D9F3E56D3A5F59AC8FA0D416DC</GUID>
+      <GUID>455709960EB292253E4732C2122AB2EB</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -314,7 +321,7 @@ Integral windup is prevent by capping the sum at a value that does not surpass s
         <Path>IG PID\PID\Write Output Range.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>89510B787056917BDA69FD2B2B308F51</GUID>
+      <GUID>87C7F8D66753FE54ED30A4ABDF656C96</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
